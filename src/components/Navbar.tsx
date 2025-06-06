@@ -17,7 +17,7 @@ async function Navbar() {
               href="/"
               className="text-xl font-bold text-primary font-mono tracking-wider"
             >
-              Ecoverse
+              TalkaSphere
             </Link>
           </div>
 
