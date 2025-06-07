@@ -1,5 +1,4 @@
-import { currentUser } from "@clerk/nextjs/server";
-import React, { use } from "react";
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
@@ -8,6 +7,7 @@ import Link from "next/link";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import { Separator } from "./ui/separator";
 import { LinkIcon, MapPinIcon } from "lucide-react";
+import { currentUser } from "@clerk/nextjs/server";
 
 async function Sidebar() {
   const authUser = await currentUser();
